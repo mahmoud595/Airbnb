@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Header2 from "./Components/Header2/Header2";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import GoogleMap from "./Components/GoogleMap/GoogleMap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header2 />
+
+      <GoogleMap />
+
+      <Footer />
     </div>
   );
 }
